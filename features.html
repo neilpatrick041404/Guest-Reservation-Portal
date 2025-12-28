@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System Features | Guest Reservation Portal</title>
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="brand">CasaTente Boutique Hotel</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="sdlc.html">SDLC</a>
+    <a href="demo.html">Demo</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO TITLE -->
+<section class="page-hero">
+  <h1>System Features</h1>
+</section>
+
+<!-- WHITE CONTENT SECTION -->
+<section class="page-content">
+  <div class="content-wrapper">
+
+    <p>
+      This section presents the major features of the Guest Reservation Portal.
+      Each feature is described in terms of its purpose, functionality, and
+      system operation, supported by screenshots or screen mock-ups.
+    </p>
+
+    <!-- FEATURE 1 -->
+    <h3>1. User Registration and Login Module</h3>
+
+    <p><strong>Purpose:</strong><br>
+      To allow customers and administrators to securely create accounts and
+      access the system using valid credentials.
+    </p>
+
+    <div class="feature-images">
+      <figure class="figure">
+        <img src="images/login-1.png" alt="Login Page Interface">
+        <figcaption>Figure 1.1 Login Page Interface</figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img src="images/registration-1.png" alt="User Registration Page">
+        <figcaption>Figure 1.2 User Registration Page</figcaption>
+      </figure>
+    </div>
+
+    <p><strong>How It Works:</strong><br>
+      Users register by providing required personal information and login
+      credentials. Once registered, users can log in to access system
+      functionalities based on their assigned role. Authentication ensures
+      that only authorized users can access the system.
+    </p>
+
+    <!-- FEATURE 2 -->
+    <h3>2. Room Browsing and Availability Checking</h3>
+
+    <p><strong>Purpose:</strong><br>
+      To enable guests to browse available rooms, view room details, and
+      check real-time availability before making a reservation.
+    </p>
+
+    <div class="feature-images">
+      <figure class="figure">
+        <img src="images/rooms-1.png" alt="Room Listings Page">
+        <figcaption>Figure 2.1 Room Listings Page</figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img src="images/rooms-2.png" alt="Room Details Page">
+        <figcaption>Figure 2.2 Room Details Page</figcaption>
+      </figure>
+    </div>
+
+    <p><strong>How It Works:</strong><br>
+      The system retrieves room data from the database and displays room
+      descriptions, amenities, pricing, and availability status. Availability
+      is updated automatically based on existing reservations.
+    </p>
+
+    <!-- FEATURE 3 -->
+    <h3>3. Reservation Management Module</h3>
+
+    <p><strong>Purpose:</strong><br>
+      To allow guests to submit reservation requests and enable administrators
+      to manage, approve, or reject reservations.
+    </p>
+
+    <div class="feature-images">
+      <figure class="figure">
+        <img src="images/reservation-1.png" alt="Reservation Request Form">
+        <figcaption>Figure 3.1 Reservation Request Form</figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img src="images/reservation-2.png" alt="Admin Reservation Dashboard">
+        <figcaption>Figure 3.2 Admin Reservation Dashboard</figcaption>
+      </figure>
+    </div>
+
+    <p><strong>How It Works:</strong><br>
+      Guests select a room, choose preferred dates, and submit a reservation
+      request. The system validates availability and forwards the request to
+      administrators for review and approval.
+    </p>
+
+    <!-- FEATURE 4 -->
+    <h3>4. Email Notification (E-Slip)</h3>
+
+    <p><strong>Purpose:</strong><br>
+      To automatically notify guests of reservation status through email
+      confirmation slips.
+    </p>
+
+    <div class="feature-images">
+      <figure class="figure">
+        <img src="images/email-1.png" alt="Email Confirmation Slip">
+        <figcaption>Figure 4 Email Confirmation Slip</figcaption>
+      </figure>
+    </div>
+
+    <p><strong>How It Works:</strong><br>
+      Once a reservation is approved, the system generates an electronic
+      confirmation slip and sends it to the guest’s registered email address.
+    </p>
+
+    <!-- FEATURE 5 -->
+    <h3>5. Dashboard and Reports</h3>
+
+    <p><strong>Purpose:</strong><br>
+      To provide administrators with an overview of reservations and generate
+      reports for monitoring and decision-making.
+    </p>
+
+    <div class="feature-images">
+      <figure class="figure">
+        <div class="figure-multi">
+            <img src="images/dashboard-1.png" alt="Administrative Dashboard">
+            <img src="images/dashboard-2.png" alt="Administrative Dashboard Stats">
+        </div>
+        <figcaption>Figure 5.1,5.2 Administrative Dashboard</figcaption>
+      </figure>
+    </div>
+
+    <p><strong>How It Works:</strong><br>
+      The dashboard aggregates reservation data and displays summaries such as
+      booking counts and room usage, which administrators can review in real time.
+    </p>
+
+    <!-- USE CASE -->
+    <h3>Use Case Diagram / User Stories</h3>
+
+    <div class="use-case">
+    <div class="feature-images">
+      <figure class="figure">
+        <img src="images/use-case.png" alt="Use Case Diagram">
+        <figcaption>Figure 6 Use Case Diagram of the System</figcaption>
+      </figure>
+    </div>
+    </div>
+
+    <p>
+      The system involves two primary actors: <strong>Customer</strong> and
+      <strong>Administrator</strong>. Customers can browse rooms, submit
+      reservation requests, and receive notifications, while administrators
+      manage reservations, monitor system data, and generate reports.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 Guest Reservation Portal – Casa Tente Boutique Hotel
+</footer>
+
+</body>
+</html>

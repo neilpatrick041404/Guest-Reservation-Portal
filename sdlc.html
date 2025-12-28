@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SDLC Documentation | Guest Reservation Portal</title>
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="brand">CasaTente Boutique Hotel</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="sdlc.html">SDLC</a>
+    <a href="demo.html">Demo</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO TITLE -->
+<section class="page-hero">
+  <h1>System Development Life Cycle (SDLC)</h1>
+</section>
+
+<!-- WHITE CONTENT -->
+<section class="page-content">
+  <div class="content-wrapper">
+
+    <p>
+      This section documents the System Development Life Cycle (SDLC) followed
+      in the development of the Guest Reservation Portal, covering requirements
+      analysis, system design, development, and testing phases.
+    </p>
+
+    <!-- 5.1 REQUIREMENTS ANALYSIS -->
+    <h3>5.1 Requirements Analysis</h3>
+
+    <h4>System Requirements</h4>
+
+    <p><strong>Functional Requirements:</strong></p>
+    <ul>
+      <li>User registration and login</li>
+      <li>Room browsing and availability checking</li>
+      <li>Online reservation submission</li>
+      <li>Reservation approval and management</li>
+      <li>Email notification (E-slip)</li>
+      <li>Administrative dashboard and reports</li>
+    </ul>
+
+    <p><strong>Non-Functional Requirements:</strong></p>
+    <ul>
+      <li>System availability and reliability</li>
+      <li>Secure user authentication</li>
+      <li>Responsive and user-friendly interface</li>
+      <li>Fast system response time</li>
+    </ul>
+
+    <h4>User Requirements</h4>
+    <ul>
+      <li>Guests must be able to book rooms online easily</li>
+      <li>Administrators must monitor and manage reservations</li>
+      <li>Management must access summarized reports</li>
+    </ul>
+
+    <h4>Requirements Specification Summary</h4>
+    <p>
+      The system requirements were gathered through observation of the hotel’s
+      manual reservation process and consultations with stakeholders, forming
+      the basis for system design and development.
+    </p>
+
+    <!-- 5.2 DESIGN PHASE -->
+    <h3>5.2 Design Phase</h3>
+
+    <h4>Wireframes / UI Mock-ups</h4>
+
+    <div class="feature-images">
+      <figure class="figure">
+        <img src="images/wireframe-1.png" alt="Homepage Wireframe">
+        <figcaption>Figure 10.1 Homepage Wireframe</figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img src="images/wireframe-2.png" alt="Reservation Page Wireframe">
+        <figcaption>Figure 10.2 Reservation Page Wireframe</figcaption>
+      </figure>
+    </div>
+
+    <h4>UML Diagram</h4>
+
+    <div class="feature-images">
+      <figure class="figure">
+        <img src="images/uml-diagram.png" alt="UML Diagram">
+        <figcaption>Figure 11 UML Diagram of the System</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      The system design phase focused on defining the user interface structure,
+      navigation flow, and system interactions using wireframes and UML diagrams.
+    </p>
+
+    <!-- 5.3 DEVELOPMENT PHASE -->
+    <h3>5.3 Development Phase</h3>
+
+    <p><strong>Development Methodology:</strong><br>
+      The system was developed using the <strong>RAD (Rapid Application Development)</strong>,
+      allowing iterative development, continuous testing, and feature refinement.
+    </p>
+
+    <p><strong>Code Repository:</strong><br>
+      <a href="https://github.com/your-repository-link" target="_blank">
+        https://github.com/your-repository-link
+      </a>
+    </p>
+
+    <p><strong>Backend API Endpoints (Sample):</strong></p>
+    <ul>
+      <li><code>POST /api/login</code> – User authentication</li>
+      <li><code>POST /api/register</code> – User registration</li>
+      <li><code>GET /api/rooms</code> – Fetch available rooms</li>
+      <li><code>POST /api/reservations</code> – Submit reservation request</li>
+    </ul>
+
+    <!-- 5.4 TESTING PHASE -->
+    <h3>5.4 Testing Phase</h3>
+
+    <h4>Test Case Matrix</h4>
+
+    <div class="feature-images test-case-matrix">
+      <figure class="figure">
+        <div class="figure-multi">
+            <img src="images/test-case-1.png" alt="Test Case Matrix">
+            <img src="images/test-case-2.png" alt="Test Case Matrix 2">
+            <img src="images/test-case-3.png" alt="Test Case Matrix 3">
+            <img src="images/test-case-4.png" alt="Test Case Matrix 4">
+            <img src="images/test-case-5.png" alt="Test Case Matrix 5">
+        </div>
+        <figcaption>Figure 13.1-13.5 Test Case Matrix</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      A test case matrix was used to validate system functionality during
+      Alpha and Beta testing phases.
+    </p>
+
+    <p>
+      <a href="files/Test_Case_Matrix.pdf" download class="download-btn">
+        Download Test Case Matrix (PDF)
+      </a>
+    </p>
+
+    <h4>Bug Report Summary</h4>
+    
+    <div class="feature-images">
+      <figure class="figure">
+        <div class="figure-multi">
+            <img src="images/bug-report-1.png" alt="Bug Report Summary">
+            <img src="images/bug-report-2.png" alt="Bug Report Summary 2">
+        </div>
+        <figcaption>Figure 14.1,14.2 Bug Report Summary</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      Minor interface bugs and validation errors were identified during testing
+      and resolved before final deployment.
+    </p>
+
+    <h4>ISO/IEC 25010 Evaluation</h4>
+
+    <div class="feature-images test-case-matrix">
+      <figure class="figure">
+        <div class="figure-multi">
+            <img src="images/iso-1.png" alt="ISO/IEC 25010 Evaluation 1">
+            <img src="images/iso-2.png" alt="ISO/IEC 25010 Evaluation 2">
+            <img src="images/iso-3.png" alt="ISO/IEC 25010 Evaluation 3">
+        </div>
+        <figcaption>Figure 15.1-15.3 ISO/IEC 25010 Evaluation</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      The system was evaluated based on ISO/IEC 25010 software quality characteristics,
+      focusing on functional suitability, usability, and performance efficiency.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 Guest Reservation Portal – Casa Tente Boutique Hotel
+</footer>
+
+</body>
+</html>

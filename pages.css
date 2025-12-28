@@ -1,0 +1,232 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #111827;
+  line-height: 1.7;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.navbar nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #2563eb;
+}
+
+/* HERO TITLE SECTION */
+.page-hero {
+  height: 30vh;
+  background: url("hero.jpg") center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DARK OVERLAY */
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+/* HERO TITLE */
+.page-hero h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* WHITE CONTENT SECTION (FULL WIDTH) */
+.page-content {
+  background: white;
+  padding: 80px 20px;
+}
+
+/* CONTENT CONTAINER */
+.content-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* HEADINGS */
+.content-wrapper h3 {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  color: #1e40af;
+}
+
+/* TEXT */
+.content-wrapper p {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 15px;
+}
+
+/* LISTS */
+.content-wrapper ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.content-wrapper li {
+  margin-bottom: 6px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* FEATURE IMAGE CONTAINER */
+.feature-images {
+  margin: 20px 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* LIMIT IMAGE SIZE */
+.feature-images img {
+  max-width: 420px;      /* controls size */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  border: 1px solid #e5e7eb;
+}
+
+/* IMAGE + CAPTION WRAPPER */
+.figure {
+  text-align: center;
+  max-width: 420px;
+}
+
+/* IMAGE */
+.figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  border: 1px solid #e5e7eb;
+}
+
+/* IMAGE CAPTION */
+.figure figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* MULTIPLE IMAGES INSIDE ONE FIGURE */
+.figure-multi {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.figure-multi img {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ==============================
+   LARGE USE CASE DIAGRAM ONLY
+   ============================== */
+
+.use-case {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.use-case figure {
+  max-width: 1200px;   /* container size */
+  width: 100%;
+}
+
+.use-case figure img {
+  max-width: 1200px;   /* image size */
+  width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   FIX: TEST CASE MATRIX ONLY
+   Allow 2 images per row
+   ========================================= */
+
+.test-case-matrix .figure {
+  max-width: 100% !important;   /* remove 420px restriction */
+}
+
+.test-case-matrix .figure-multi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.test-case-matrix .figure-multi img {
+  flex: 0 0 48%;                 /* 2 images per row */
+  max-width: 480px;
+}
+
+/* ================================
+   FIX: Test Case Matrix ONLY
+   Force 2 images per row
+   ================================ */
+
+.test-case-matrix .figure-multi {
+  flex-wrap: wrap;
+}
+
+.test-case-matrix .figure-multi img {
+  width: calc(50% - 20px);   /* overrides width:100% */
+  max-width: none;           /* remove max cap */
+  flex: none;                /* prevent flex override */
+}
