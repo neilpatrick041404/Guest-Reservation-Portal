@@ -1,0 +1,50 @@
+# Guest Reservation Portal  
+### Casa Tente Boutique Hotel
+
+## Project Overview
+The **Guest Reservation Portal** is a web-based reservation and management system developed for **Casa Tente Boutique Hotel**. The system was designed to replace the hotel’s manual reservation process by automating room booking, availability checking, email notifications, and administrative reporting. It aims to reduce overbooking issues, improve operational efficiency, and enhance customer satisfaction through real-time data management.
+
+This project was developed as a **Capstone Project** in partial fulfillment of the requirements for the **Bachelor of Science in Information Systems**.
+
+---
+
+## Project Team
+- **Neil Patrick L. Columna** – Programmer  
+- **Rhenalie G. Villanueva** – System Analyst / Technical Writer  
+- **Sonlife M. Guray** – Research Contributor  
+
+**Adviser:**  
+Homer G. Fuentes, MIT, LPT  
+College of ICT – Sorsogon State University (Bulan Campus)
+
+---
+
+## System Features
+- User Registration and Login Module  
+- Room Browsing and Real-Time Availability Checking  
+- Reservation Management (Customer & Admin)  
+- Email Notification (E-Slip Confirmation)  
+- Administrative Dashboard and Reports  
+
+---
+
+## Technology Stack
+**Frontend:**  
+- HTML  
+- CSS  
+
+**Backend:**  
+- Node.js  
+- Express.js  
+
+**Database:**  
+- MySQL  
+
+**Tools & Platforms:**  
+- Visual Studio Code  
+- GitHub  
+- Browser-based Deployment  
+
+---
+
+## Project Structure
